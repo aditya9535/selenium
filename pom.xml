@@ -43,6 +43,16 @@
 			<artifactId>guice</artifactId>
 			<version>4.1.0</version>
 		</dependency>
+		<dependency>
+			<groupId>net.sf.jacob-project</groupId>
+			<artifactId>jacob</artifactId>
+			<version>1.14.3</version>
+		</dependency>
+		<dependency>
+			<groupId>de.openkeyword</groupId>
+			<artifactId>autoit</artifactId>
+			<version>0.0.16</version>
+		</dependency>
 
 	</dependencies>
 
