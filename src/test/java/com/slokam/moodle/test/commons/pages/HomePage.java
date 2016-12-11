@@ -3,6 +3,8 @@ package com.slokam.moodle.test.commons.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.slokam.moodle.test.commons.utils.UtilsManager;
+
 public class HomePage {
 	public WebDriver driver;
 	
@@ -19,5 +21,10 @@ public class HomePage {
 
 	public boolean verifyHomePage() {
 		return true;
+	}
+	public void navigateToHomePage() {
+		String url  = UtilsManager.getValue("url");
+		driver.get(url);
+		
 	}
 }

@@ -4,6 +4,8 @@ import org.testng.annotations.Test;
 
 import com.slokam.moodle.test.commons.ConstantInterface;
 import com.slokam.moodle.test.commons.CustomConstants;
+import com.slokam.moodle.test.commons.enums.Navigation;
+import com.slokam.moodle.test.commons.enums.UpdatedNavigation;
 import com.slokam.moodle.test.commons.pages.DashBoardPage;
 import com.slokam.moodle.test.commons.pages.HomePage;
 import com.slokam.moodle.test.commons.pages.LoginPage;
@@ -23,7 +25,7 @@ public class TestPlugin extends TestBase {
 		loginPage.login("user", "user123");
 
 		DashBoardPage dashBoardPage = new DashBoardPage(driver);
-		dashBoardPage.navigateToPage(ConstantInterface.LANGUAGE, ConstantInterface.LANGUAGE_PACKS);
-		//dashBoardPage.navigateToPage(CustomConstants.REGISTRATION);
+		
+		dashBoardPage.navigateToPage(UpdatedNavigation.COMMENTS);
 	}
 }

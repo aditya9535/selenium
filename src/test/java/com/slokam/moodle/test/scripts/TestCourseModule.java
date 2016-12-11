@@ -1,4 +1,4 @@
-package com.slokam.moodle.test.scripts;
+/*package com.slokam.moodle.test.scripts;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -52,3 +52,4 @@ public class TestCourseModule extends TestBase{
 	
 	
 }
+*/
