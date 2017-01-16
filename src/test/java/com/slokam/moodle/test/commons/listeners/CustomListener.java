@@ -29,4 +29,9 @@ public class CustomListener extends TestListenerAdapter{
 			e.printStackTrace();
 		}*/
 	}
+	
+	public void onTestStart(ITestResult arg0) {
+		System.out.println("On starting of test --- onTestStart will be invoked. -----"+ arg0.getName());
+		
+	}
 }

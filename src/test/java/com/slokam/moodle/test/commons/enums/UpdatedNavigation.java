@@ -5,7 +5,8 @@ public enum UpdatedNavigation {
 	MANAGE_AUTHENTICATION("Plugins","Authentication","Manage authentication"),
 	INSTALL_PLUGIN("Plugins","Install plugins",null),
 	REGISTRATION("Registration",null,null),
-	COMMENTS("Reports","Comments","");
+	COMMENTS("Reports","Comments",""),
+	CREATE_USER("Users","Accounts","Add a new user");
 	UpdatedNavigation(String category, String subCat, String item){
 		this.category= category;
 		this.subCat = subCat;

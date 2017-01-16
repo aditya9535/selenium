@@ -44,7 +44,7 @@ public class DashBoardPage {
 		driver.findElement(By.xpath("//div[@data-block='settings']//ul[@class='block_tree list']/li[1]/ul[1]/li/p//*[text()='"+ nav.getCategory() +"']")).click();
 		}
 		if(nav.getSubCat()!=null){
-		driver.findElement(By.xpath("//div[@data-block='settings']//ul[@class='block_tree list']/li[1]/ul[1]/li/ul//p//*[text()='"+ nav.getCategory() +"']")).click();
+		driver.findElement(By.xpath("//div[@data-block='settings']//ul[@class='block_tree list']/li[1]/ul[1]/li/ul//p//*[text()='"+ nav.getSubCat() +"']")).click();
 		}
 		if(nav.getValue()!=null){
 		driver.findElement(By.xpath("//*[text()='" + nav.getValue() + "']")).click();

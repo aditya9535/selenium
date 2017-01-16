@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.Random;
 
 import net.sourceforge.htmlunit.corejs.javascript.tools.debugger.Main;
 
@@ -36,6 +37,21 @@ public class UtilsManager {
 	}
 	public static void main(String[] args) {
 		
-		System.out.println(getValue("url"));
+		System.out.println(randomString(5));
+	}
+	
+	
+	
+	public static String randomString(int length){
+		String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+        StringBuilder salt = new StringBuilder();
+        Random rnd = new Random();
+        while (salt.length() < length) {
+            int index = (int) (rnd.nextFloat() * SALTCHARS.length());
+            salt.append(SALTCHARS.charAt(index));
+        }
+        String saltStr = salt.toString();
+        return saltStr;
+		
 	}
 }

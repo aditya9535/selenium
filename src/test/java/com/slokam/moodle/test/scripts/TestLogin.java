@@ -11,7 +11,7 @@ import com.slokam.moodle.test.commons.utils.DataProviderManager;
 public class TestLogin  extends TestBase{
 
 	
-	//@Test
+	@Test
 	public void verifyLogin(){
 		
 		String username= "user";
@@ -50,6 +50,7 @@ public class TestLogin  extends TestBase{
 		dashBoardPage.logout();
 		}
 	}
+	
 	
 
 	

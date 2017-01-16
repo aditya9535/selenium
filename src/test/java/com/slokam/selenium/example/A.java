@@ -4,37 +4,28 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+import com.slokam.moodle.test.commons.dtos.UserDTO;
+import com.slokam.moodle.test.commons.utils.UtilsManager;
+
 public class A {
 
 	@Test
 	public void test1() {
-
-		int i[] = { 10, 20, 40, 45 };
-		System.out.println(i[2]);
-		int j[][] = { { 30, 4, 3, 4, 2 }, 
-					{ 30, 4, 3, 4, 2 }, 
-					i,
-					{3,4,3,4,5},
-					{3}};
-
-		int jj[] = j[1];
-		int val = jj[2];
-		val = j[1][2];
-
-		String st[][] = { { "ad", "df" }, { "sdf", "fff" }  };
+		String username = UtilsManager.randomString(5);
+		String password = UtilsManager.randomString(8);
+		String firstname =UtilsManager.randomString(5);
+		String lastname = UtilsManager.randomString(5);
+		String email = 	  UtilsManager.randomString(5);
 		
-		
-		
-		int a[] = new int[5];
-		a[0] = 33;
-		a[1] = 22;
-		a[2] = 344;
-		
-		
-		int d2[][] = new int[4][3];
-		
-		d2[0][0] = 10;
-		d2[4][2] = 30;
+		UserDTO dto = new UserDTO();
+		dto.setUsername(username);
+		dto.setPassword(password);
+		dto.setFirstname(firstname);
+		dto.setLastname(lastname);
+		dto.setEmail(email);
+		dto.setCity("Hyderabad");
 				
+		
+		System.out.println(dto);
 	}
 }

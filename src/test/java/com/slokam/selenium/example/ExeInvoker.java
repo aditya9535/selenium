@@ -20,7 +20,7 @@ public class ExeInvoker {
 		//Runtime.getRuntime().exec("D:\\selenium_classes\\autoit\\batch22_download.exe");
 	}
 	
-	@Test
+	//@Test
 	//System.setProperty(LibraryLoader.JACOB_DLL_PATH, "./src/test/resources/jacob-1.14.3-x64.dll");
 	public void test2(){
 		System.setProperty(LibraryLoader.JACOB_DLL_PATH, new File("./src/test/resources/jacob-1.14.3-x64.dll").getAbsolutePath());
