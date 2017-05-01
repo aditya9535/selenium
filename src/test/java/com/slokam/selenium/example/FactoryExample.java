@@ -4,7 +4,7 @@ import org.testng.annotations.Factory;
 
 public class FactoryExample {
 
-	@Factory
+	/*@Factory
 	public Object[] testF(){
 		Object[] obj = new Object[10];
 		
@@ -12,5 +12,5 @@ public class FactoryExample {
 			obj[i] = new Example2();
 		}
 		return obj;
-	}
+	}*/
 }

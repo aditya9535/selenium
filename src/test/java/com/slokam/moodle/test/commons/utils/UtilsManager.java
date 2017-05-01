@@ -52,6 +52,5 @@ public class UtilsManager {
         }
         String saltStr = salt.toString();
         return saltStr;
-		
 	}
 }
